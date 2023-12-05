@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import { useState } from 'react';
 import './App.css'
+import Form from './components/InvoiceForm'
 const App = () => {
 
   const [showNav, setShowNav] = useState(false);
@@ -17,7 +18,7 @@ const App = () => {
      <Header show = {showNav} toggleNav = {toggleNav}/>
     
       <Sidebar show = {showNav} toggleNav ={toggleNav}/>
-      good boy
+      <Form />
     </div>
   );
 };
