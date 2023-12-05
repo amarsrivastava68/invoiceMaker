@@ -12,14 +12,22 @@ body {
   height: 40px;
 }
 .sidenav {
+  align-items: left;
   width : 240 px; 
   background: #011627;
   position : absolute ;
   height: 95vh;
   padding:  0 30px;
-  transition: all 1s;
+  left: -100%;
+  transition: all 0.5s;
+}
+.sidenav.active{
+  left: 0;
 }
 
+.logo {
+  width: 100px;
+}
 ul{
   padding : 0 ;
 }
@@ -27,7 +35,8 @@ ul{
  ul li  {
 
   list-style-type: none;
- }
+  margin: 10px 0;
+}
 
  ul li a {
     color : white ;

@@ -1,14 +1,20 @@
 // src/App.js
 import React from 'react';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import Header from './components/Header';
+import { useState } from 'react';
 import './App.css'
 const App = () => {
+
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
   return (
     <div>
-     <Header/>
-      <Navbar/>
-     
+     <Header toggleNav = {toggleNav}/>
+      <Sidebar show = {showNav}/>
     </div>
   );
 };

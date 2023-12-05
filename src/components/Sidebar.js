@@ -1,9 +1,10 @@
 import React from "react";
-
-const Navbar = () => {
+import logo from './logo.png'
+const Navbar = ({show}) => {
   return (
-    <div className="sidenav">
+    <div className={show ? 'sidenav active' : 'sidenav'}>
       <ul>
+        
         <li>
           <a href="first link">Home</a>
         </li>
