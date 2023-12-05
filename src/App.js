@@ -1,12 +1,16 @@
+// src/App.js
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import { Search } from 'react-bootstrap-icons';
-
-
-const MyButton = () => {
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import './App.css'
+const App = () => {
   return (
-   <p>Project started </p>
+    <div>
+     <Header/>
+      <Navbar/>
+     
+    </div>
   );
 };
 
-export default MyButton;
+export default App;
