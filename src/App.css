@@ -5,24 +5,25 @@ body {
   color: #eaecef;
 }
 
-.header {
 
-  padding: 30px;
-  background-color: black;
-  height: 40px;
-}
 .sidenav {
-  align-items: left;
+  
   width : 240 px; 
   background: #011627;
   position : absolute ;
   height: 95vh;
-  padding:  0 30px;
+  padding:  0 5px;
   left: -100%;
   transition: all 0.5s;
 }
 .sidenav.active{
   left: 0;
+}
+.p{
+  margin-right: 0px;
+  margin-left: 300px;
+  color: rgb(221, 36, 36);
+  font-weight: bold;
 }
 
 .logo {
@@ -35,7 +36,7 @@ ul{
  ul li  {
 
   list-style-type: none;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
  ul li a {
@@ -43,9 +44,19 @@ ul{
     text-decoration: none;
     font-size: 16px;
     display: block;
-    padding: 10px 15px;
+    padding: 4px 0px 4px;
     border-radius: 6px;
  }
+
+ .top-heading {
+  color : white ;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 0px 0px 0px;
+  border-radius: 6px;
+}
+
 
  ul li a:hover  ,
  ul li a.active {

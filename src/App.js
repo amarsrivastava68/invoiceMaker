@@ -13,8 +13,11 @@ const App = () => {
   };
   return (
     <div>
-     <Header toggleNav = {toggleNav}/>
-      <Sidebar show = {showNav}/>
+     
+     <Header show = {showNav} toggleNav = {toggleNav}/>
+    
+      <Sidebar show = {showNav} toggleNav ={toggleNav}/>
+      good boy
     </div>
   );
 };
