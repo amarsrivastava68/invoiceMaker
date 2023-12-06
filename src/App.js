@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import { useState } from "react";
 import "./App.css";
+import Download from './components/Download'
 import Form from "./components/InvoiceForm";
 const App = () => {
   const [showNav, setShowNav] = useState(false);
@@ -15,7 +16,9 @@ const App = () => {
     <div>
       <Header show={showNav} toggleNav={toggleNav} />
       <Sidebar show={showNav} toggleNav={toggleNav} />
-      <Form />
+      <div className="mainpage"><Form />
+      <Download/>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,26 @@ body {
   color: #eaecef;
 }
 
+.mainpage {
+  
+    display: flex;
+    flex-direction: row;
+  
+}
+
+  .downloader {
+    flex: 0.7; 
+    text-align: center;
+    border: 2px dotted blue;
+    padding-left: 20px;
+    width: auto ;
+    margin-top: 65px;
+    border-radius: 14px;
+    margin-left: 40px;
+    
+  }
+  
+
 
 .sidenav {
   
