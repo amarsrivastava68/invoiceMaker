@@ -2,7 +2,18 @@ import React from "react";
 import { MdDocumentScanner } from "react-icons/md";
 import { SiMicrosoftexcel } from "react-icons/si";
 import { FaFileExcel } from "react-icons/fa";
+import { Button, Dropdown } from 'react-bootstrap';
+import { useState } from "react";
+
+  
 const Download = () => {
+
+  const [isListVisible, setListVisibility] = useState(false);
+
+  const toggleDropdown = () => {
+    setListVisibility(prev => !prev);
+  }
+
   return (
     <div className="downloader">
       <br/>
@@ -14,8 +25,8 @@ const Download = () => {
         <button
           style={{
             borderRadius: "50%",
-            width: "22px",
-            height: "22px",
+            width: "21px",
+            height: "21px",
             backgroundColor: "#333",
             color: "white",
             fontSize: "16px",
@@ -30,8 +41,8 @@ const Download = () => {
         <button
           style={{
             borderRadius: "50%",
-            width: "22px",
-            height: "22px",
+            width: "21px",
+            height: "21px",
             backgroundColor: "#007bff",
             color: "white",
             fontSize: "16px",
@@ -46,8 +57,8 @@ const Download = () => {
         <button
           style={{
             borderRadius: "50%",
-            width: "22px",
-            height: "22px",
+            width: "21px",
+            height: "21px",
             backgroundColor: "brown",
             color: "white",
             fontSize: "16px",
@@ -62,8 +73,8 @@ const Download = () => {
         <button
           style={{
             borderRadius: "50%",
-            width: "22px",
-            height: "22px",
+            width: "21px",
+            height: "21px",
             backgroundColor: "green",
             color: "white",
             fontSize: "16px",
@@ -78,8 +89,8 @@ const Download = () => {
         <button
           style={{
             borderRadius: "50%",
-            width: "22px",
-            height: "22px",
+            width: "21px",
+            height: "21px",
             backgroundColor: "orange",
             color: "white",
             fontSize: "16px",
@@ -99,10 +110,10 @@ const Download = () => {
       >
         
         
-          <MdDocumentScanner   style={{ fontSize: "4.5em" }}/>
+          <MdDocumentScanner   style={{ fontSize: "4.3em" }}/>
         
-        <SiMicrosoftexcel  style={{ fontSize: "4.5em" }}/>
-        <FaFileExcel  style={{ fontSize: "4.5em" }} />
+        <SiMicrosoftexcel  style={{ fontSize: "4.3em" }}/>
+        <FaFileExcel  style={{ fontSize: "4.3em" }} />
       </div>
       
       <div
@@ -120,7 +131,7 @@ const Download = () => {
       <button type="button" className="btn btn-primary width-lg" >
     Save
   </button>
-  <div style={{ display: "inline-block" }}>
+  {/* <div style={{ display: "inline-block" }}>
     <button
       style={{
         backgroundColor: "white",
@@ -136,7 +147,19 @@ const Download = () => {
       <li>Download</li>
       <li>Print</li>
     </ul>
-  </div>
+  </div> */}
+
+<Dropdown>
+      <Dropdown.Toggle variant="secondary" id="dropdown-basic"   onClick={toggleDropdown}>
+        Download/Print
+        
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu show = {isListVisible} >
+        <Dropdown.Item>Download</Dropdown.Item>
+        <Dropdown.Item>Print</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
 </div>
     </div>
   );
