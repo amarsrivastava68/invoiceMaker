@@ -1,7 +1,7 @@
-// src/components/Header.js
+
 import { React, useState } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import { ThreeBars, Person } from "react-bootstrap-icons"; // Assuming you have installed react-bootstrap-icons
+import { ThreeBars, Person } from "react-bootstrap-icons"; 
 import logo from "./logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Sidebar from "./Sidebar";
@@ -32,7 +32,7 @@ const Header = ({ toggleNav }) => {
           <Button variant="outline-primary" className="me-2">
             Check Out Zoho Invoice
           </Button>
-          <Button variant="danger">Create an account</Button>
+          <Button variant="danger">Sign up. It's free!</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
