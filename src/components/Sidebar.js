@@ -1,5 +1,9 @@
 import React from 'react';
 import logo from './logo.png';
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { FaMoneyCheckDollar } from 'react-icons/fa6';
+import { FaFileInvoiceDollar } from "react-icons/fa6";
+<FaMoneyCheckDollar />
 
 const Navbar = ({ show, toggleNav }) => {
   return (
@@ -16,7 +20,7 @@ const Navbar = ({ show, toggleNav }) => {
           Finance Free Applications
         </h4>
         <br></br>
-        <p className="top-heading">Top Heading 1</p>
+        <p className="top-heading"><FaMoneyBillTrendUp style={{ fontSize: "1.5em"  , padding : '5px'}}/>Top Heading 1</p>
 
         <li>
           <a href="#">Home</a>
@@ -34,7 +38,7 @@ const Navbar = ({ show, toggleNav }) => {
 
       <ul>
         
-        <p className="top-heading">Top Heading 2</p>
+        <p className="top-heading"><FaFileInvoiceDollar  style={{ fontSize: "1.5em"  , padding : '5px'}} />Top Heading 2</p>
 
         <li>
           <a href="#">Home</a>
@@ -52,7 +56,7 @@ const Navbar = ({ show, toggleNav }) => {
 
       <ul>
         
-        <p className="top-heading">Top Heading 3</p>
+        <p className="top-heading"><FaMoneyCheckDollar style={{ fontSize: "1.5em"  , padding : '5px'}}/>Top Heading 3</p>
 
         <li>
           <a href="#">Home</a>
